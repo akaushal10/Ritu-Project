@@ -3,6 +3,8 @@ import HelloIngle from "./HelloIngle";
 import HelloRitu from "./HelloRitu"
 import Hello from "./Hello"
 import CounterWithClass from "./classComponents/CounterWithClass";
+import CounterWithHook from "./classComponents/CounterWithHook";
+
 export default () => {
   const userData = ["Ingle","Ritu","Neha","Abhishek","Rohan"]
   // const userData = [{userName:"Ritu",age:23}]
@@ -20,7 +22,8 @@ export default () => {
       {/* {userData.map((value,index)=>{
         return <Hello userName={value} age="23" />
       })} */}
-      <CounterWithClass/>
+      {/* <CounterWithClass /> */}
+      <CounterWithHook/>
     </div>
   );
 };

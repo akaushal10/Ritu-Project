@@ -5,7 +5,8 @@ class CounterWithClass extends Component {
     super(props);
     this.state = {
       counter: 10,
-      myname:''
+      myname:'',
+      email:'',
     };
     // State is read only (immutable)
   }
@@ -19,6 +20,12 @@ class CounterWithClass extends Component {
   };
   changeMyname = (event)=>{
    this.setState({myname:event.target.value})
+  }
+  componentDidMount(){
+    console.log("componentDidMount")
+  }
+  static getDerivedStateFromProps(prevState,prevProp){
+    console.log("getDerivedStateFromProps")
   }
   render() {
     return (
