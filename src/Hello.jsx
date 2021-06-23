@@ -1,6 +1,7 @@
 import React from "react";
 const Hello = (props) => {
   // local vairblae => state
+  const docString = "This is bhello cpmpa"
   const { userName, age } = props;
   // Object Desturing
 //   const friends = [{name:"Neha",mobile:9743827483},{name:"Ingle",mobile:83433827483}]

@@ -4,13 +4,14 @@ import HelloRitu from "./HelloRitu"
 import Hello from "./Hello"
 import CounterWithClass from "./classComponents/CounterWithClass";
 import CounterWithHook from "./classComponents/CounterWithHook";
-
+import Register from "./form/Register";
+import RegisterWithClass from "./form/RegisterWithClass";
 export default () => {
   const userData = ["Ingle","Ritu","Neha","Abhishek","Rohan"]
   // const userData = [{userName:"Ritu",age:23}]
   return (
     <div>
-      <HelloRitu/>
+      {/* <HelloRitu/> */}
       {/* <HelloIngle/> */}
 
       {/* <Hello userName="Ingle" age="23" />
@@ -23,7 +24,10 @@ export default () => {
         return <Hello userName={value} age="23" />
       })} */}
       {/* <CounterWithClass /> */}
-      <CounterWithHook/>
+      {/* <CounterWithHook/> */}
+      {/* <Register/> */}
+      <RegisterWithClass/>
+
     </div>
   );
 };
