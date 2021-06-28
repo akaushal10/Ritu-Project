@@ -1,33 +1,13 @@
-import React from "react";
-import HelloIngle from "./HelloIngle";
-import HelloRitu from "./HelloRitu"
-import Hello from "./Hello"
-import CounterWithClass from "./classComponents/CounterWithClass";
-import CounterWithHook from "./classComponents/CounterWithHook";
-import Register from "./form/Register";
-import RegisterWithClass from "./form/RegisterWithClass";
-export default () => {
-  const userData = ["Ingle","Ritu","Neha","Abhishek","Rohan"]
-  // const userData = [{userName:"Ritu",age:23}]
-  return (
+import React from 'react'
+import Hello from './Hello'
+function App(){
+  return(
     <div>
-      {/* <HelloRitu/> */}
-      {/* <HelloIngle/> */}
-
-      {/* <Hello userName="Ingle" age="23" />
-      <Hello userName="Ritu" age="23" />
-      <Hello userName="Neha" age="23" />
-      <Hello userName="Abhishek" age="23" /> */}
-
-      {/* props */}
-      {/* {userData.map((value,index)=>{
-        return <Hello userName={value} age="23" />
-      })} */}
-      {/* <CounterWithClass /> */}
-      {/* <CounterWithHook/> */}
-      {/* <Register/> */}
-      <RegisterWithClass/>
-
+      <h1>Ritu</h1>
+      <h1>INgle</h1>
+      <h1>Neha</h1>
+      <Hello></Hello>
     </div>
-  );
-};
+  )
+}
+export default App;

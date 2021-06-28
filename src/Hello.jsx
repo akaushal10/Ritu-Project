@@ -1,23 +1,9 @@
-import React from "react";
-const Hello = (props) => {
-  // local vairblae => state
-  const docString = "This is bhello cpmpa"
-  const { userName, age } = props;
-  // Object Desturing
-//   const friends = [{name:"Neha",mobile:9743827483},{name:"Ingle",mobile:83433827483}]
-//   const [neha,ingle] = friends
-    const nehaDetails = {myname:"Neha",mobile:9743827483,friend:"Ritu"}
-    // const mobile =nehaDetails.mobile 
-    // const myname = nehaDetails.myname
-    const {myname,mobile} = nehaDetails
-  return (
+import React from 'react'
+function Hello(){
+  return(
     <div>
-      <h1>
-        Hello {userName}: {age}
-        {mobile}
-        {myname}
-      </h1>
+      <h1>Hello</h1>
     </div>
-  );
-};
+  )
+}
 export default Hello;
