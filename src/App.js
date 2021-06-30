@@ -1,29 +1,18 @@
 import React from "react";
-import HelloIngle from "./HelloIngle";
-import HelloRitu from "./HelloRitu"
-import Hello from "./Hello"
-import CounterWithClass from "./classComponents/CounterWithClass";
-import CounterWithHook from "./classComponents/CounterWithHook";
-
+import RouteList from "./RouteList";
+import NavBar from "./NavBar";
+import Base from "./Base";
+import "./App.css"
+import { BrowserRouter } from "react-router-dom";
 export default () => {
-  const userData = ["Ingle","Ritu","Neha","Abhishek","Rohan"]
-  // const userData = [{userName:"Ritu",age:23}]
+  const userData = ["Ingle", "Ritu", "Neha", "Abhishek", "Rohan"];
   return (
     <div>
-      <HelloRitu/>
-      {/* <HelloIngle/> */}
-
-      {/* <Hello userName="Ingle" age="23" />
-      <Hello userName="Ritu" age="23" />
-      <Hello userName="Neha" age="23" />
-      <Hello userName="Abhishek" age="23" /> */}
-
-      {/* props */}
-      {/* {userData.map((value,index)=>{
-        return <Hello userName={value} age="23" />
-      })} */}
-      {/* <CounterWithClass /> */}
-      <CounterWithHook/>
+      <BrowserRouter>
+        {/* <Base/> */}
+        <NavBar/>
+        <RouteList/>
+      </BrowserRouter>
     </div>
   );
 };

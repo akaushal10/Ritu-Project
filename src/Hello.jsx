@@ -1,19 +1,16 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 const Hello = (props) => {
-  // local vairblae => state
   const { userName, age } = props;
-  // Object Desturing
-//   const friends = [{name:"Neha",mobile:9743827483},{name:"Ingle",mobile:83433827483}]
-//   const [neha,ingle] = friends
     const nehaDetails = {myname:"Neha",mobile:9743827483,friend:"Ritu"}
-    // const mobile =nehaDetails.mobile 
-    // const myname = nehaDetails.myname
     const {myname,mobile} = nehaDetails
+    const {id,eid} = useParams()
   return (
     <div>
+{      console.log("param : ",id)}
       <h1>
         Hello {userName}: {age}
-        {mobile}
+        {id}
         {myname}
       </h1>
     </div>
